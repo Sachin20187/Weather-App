@@ -1,0 +1,235 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: "Merriweather Sans", sans-serif;
+    text-align: center;
+    font-weight: 400;
+}
+
+.container{
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    color: #F9F7F7;
+    background-image: linear-gradient(#0d41a7 10%, #2e71f9 50%, #0e4dcc 80%, #103888 100%);
+    
+} 
+
+.container h2{
+    padding: 0 2rem 2rem;
+    font-size: 2rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.container #logo{
+    margin-top: 2rem;
+}
+.container-tab{
+    margin: 20px 50px;
+    display: flex;
+    align-items: center;
+    width: 90%;
+    max-width: 500px;
+    justify-content: space-between;
+    font-size: 1.7rem;
+}
+.tab{
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+.tab.current{
+    border-radius: 10px;
+    background-color: #dbe2ef80;
+    padding: 5px 10px;
+}
+.weather-container{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container-child{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.grant-location{
+    display: none;
+}
+.grant-location.active{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin: 2rem;
+}
+.grant-location img{
+    margin-bottom: 20px;
+}
+.grant-location p:first-of-type{
+    text-transform: capitalize;
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+
+.grant-location p:last-of-type{
+    font-size: 0.9rem;
+    font-weight: 500;
+    letter-spacing: 0.75px;
+}
+
+.loading-container{
+    display: none;
+}
+
+.loading-container.active{
+    display: flex;
+}
+
+.loading-container p{
+    text-transform: uppercase;
+}
+
+.btn-Access{
+    margin-top: 5px;
+    padding: 5px 15px;
+    color: #fcfafa;
+    border: 0;
+    border-radius: 4px;
+    background-color: #dbe2ef80;
+    cursor: pointer;
+}
+
+.container-form{
+    display: none;
+    width: 90%;
+    max-width: 500px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 20px;
+
+}
+
+.container-form.active{
+    display: flex;
+}
+.container-form input{
+    width: 100%;
+    height: 25px;
+    font-size: 1rem;
+    border: 0;
+    border-radius: 10px;
+    padding: 5px 10px;
+    color: rgb(255, 255, 255);
+    background-color: #dbe2ef80;
+}
+
+input:focus {
+    outline: none;
+    border: none;
+}
+
+input::placeholder{
+    color: white;
+    opacity: 1;
+}
+.container-form .btn {
+    padding:unset;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 0;
+    background: transparent;
+}
+
+.weatherInfo-container{
+    display:none;
+}
+
+.weatherInfo-container.active{
+    display: flex;
+    justify-content: center;
+}
+
+.weatherInfo-container .name{
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+
+}
+
+.weatherInfo-container p{
+    font-size:1.2rem;
+    font-weight:500;
+    text-transform: capitalize;
+}
+
+.weatherInfo-container img{
+    margin: 2px;
+    width:70px;
+    height:70px;
+    
+}
+
+.weatherInfo-container .name p{
+    font-size:2rem;
+}
+
+.weatherInfo-container .name img{
+    height:30px;
+    object-fit: contain;
+}
+
+.weatherInfo-container p[data-temp] {
+    font-size:2.75rem;
+    font-weight:700;
+}
+
+.parameter-container{
+    box-sizing: border-box;
+    width:80%;
+    display: flex;
+    gap: 10px 15px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+.parameter{
+    /* width:25%; */
+    min-width: 120px;
+    background-color: rgba(163, 169, 181, 0.722);;
+    border-radius: 5px;
+    padding:1rem;
+    display: flex;
+    flex-direction: column;
+    gap:5px 0;
+    align-items: center; 
+}   
+
+.parameter img{
+    width:45px;
+    height:45px;
+}
+
+.parameter p:first-of-type{
+    font-size: 1.15rem;
+    font-weight:600;
+    text-transform: uppercase;
+}
+
+.parameter p:last-of-type{
+    font-size: 1rem;
+    font-weight: 200;
+}
+
